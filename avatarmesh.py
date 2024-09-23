@@ -209,6 +209,7 @@ with map_face_mesh.FaceMesh(
             rotation_z = [[cos(angle_z), -sin(angle_z), 0],
                           [sin(angle_z), cos(angle_z), 0],
                           [0, 0, 1]]
+
             nose_landmark = face_landmarks.landmark[1]  # Assuming landmark 1 is the nose
             avatar_x = nose_landmark.x * screen_width
             avatar_y = nose_landmark.y * screen_height
